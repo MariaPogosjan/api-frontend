@@ -1,9 +1,11 @@
 import React from 'react'
 
+import NetflixShowList from './components/NetflixShowList'
+
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <main>
+      <NetflixShowList />
+    </main>
   )
 }

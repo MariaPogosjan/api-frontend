@@ -1,13 +1,67 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ background: #000;
+ color: #fff;
+ font-family: 'Noto Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.main-container {
+  margin: 50px;
+}
+
+.header-title {
+  text-align: center;
+  font-size: 29px;
+}
+
+.movie-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.item-card {
+  border: 3px solid #fff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.1s ease-in;
+}
+
+.item-card:hover{
+  border: 3px solid red;
+  background-color: #ff0000;
+  width: 220px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 100px;
+  padding: 12px;
+  margin: 15px 10px;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 7px;
+  color: #faf8f8;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 600px){
+  .movie-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
