@@ -29,6 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   transition: 0.1s ease-in;
   position: relative; 
 }
@@ -95,7 +96,7 @@ body {
   color: #000;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 758px){
   .movie-wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -116,7 +117,7 @@ body {
 
   .btn-container input {
     width: 80%;
-    height: 33px;
+    height: 30px;
     margin-top: 5px;
     margin-left: 10px;
   }
@@ -126,7 +127,6 @@ body {
     padding: 8px;
     margin: 5px;
   }
-
 
   .item-card::before {    
     display: none;
