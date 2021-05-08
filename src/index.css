@@ -64,6 +64,7 @@ body {
   justify-content: center;
   margin-bottom: 5px;
 }
+
 .btn-container input {
   height: 33px;
   width: 16%;
@@ -99,4 +100,36 @@ body {
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .item-card {
+    border: 4px solid #fff;
+    box-shadow: 10px 6px #47444491;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.1s ease-in;
+    position: relative; 
+  }
+
+  .btn-container input {
+    width: 80%;
+    height: 33px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+
+  .btn {
+    width: 120px;
+    padding: 8px;
+    margin: 5px;
+  }
+
+
+  .item-card::before {    
+    display: none;
+  }
+
 }
