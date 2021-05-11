@@ -35,7 +35,7 @@ const NetflixShowList = () => {
       </div>
       <div className="btn-container">
         <input type="text" value={input} onChange={(e) => setInput(e.target.value)} />
-        <button type="button" className="btn" onClick={search}>Serach</button>
+        <button type="button" className="btn" onClick={search}>Search</button>
       </div>
       <div className="movie-wrapper">
         {movieList.slice(0, visble).map((movie) => {
